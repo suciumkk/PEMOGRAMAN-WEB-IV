@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Declare javascript on JQuery -->
+	<title>Tugas 3 JQuery</title>
+	<script src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// declare fungction button fade in // 
+			$('#in').click(function(){$(".segi").show("slow")});
+			// declare fungction button fade out //
+			$("#out").click(function(){$(".segi").hide("slow")});  
+			$("#switch").click(function(){
+				$(".segi").css({
+					'background-color' :'orange'
+				});  //declare fungction button fade to 0.3
+			});	
+		});
+	</script>
+	<style>
+		/*make style for square*/
+		.segi{
+		width: 200px;
+		height: 200px;
+		border-style: black;
+		border-width: 2px;
+		border-color: black;
+		background-color: pink;
+
+		/*make image square with colour, the desired size*/
+		}
+	</style>
+</head>
+<body>
+	<!-- calls image square -->
+<h1 class="segi"></h1> 
+ 	<!-- make button fade in -->
+<button id="in">fade in</button> 
+	<!-- make button fade out -->
+<button id="out">fade out</button>
+	<!-- make button fade to 0.3 -->
+<button id="switch">fade to 0.3</button> 
+</body>
+</html>

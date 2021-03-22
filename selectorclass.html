@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- declare text javacript in file jquery -->
+	<title>selector class</title>
+	<script type="text/javascript" src="jquery-3.6.0.min.js">
+		
+	</script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#daftar").addClass("merahkuning"); //declare class 
+			$(".subdaftar").addClass("kuninghitam");
+		});
+	</script>
+	<!-- effect on class -->
+	<style type="text/css">
+		.merahkuning{
+			color: red;
+			font-weight: bold;
+			background-color: yellow;
+			padding: 3px; 
+		}
+		.kuninghitam{
+			color: blue;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<p>Paragraf Pertama</p>
+		<div>
+				<!-- selector by calling the class name -->
+		<ul id="daftar">
+			<li>item 1</li>
+			<li class="subdaftar">item 2</li>
+			<li>item 3</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

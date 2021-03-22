@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+		<title>Tugas 2 JQuery</title>
+	<!-- Declare javascript on JQuery -->
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#square1").dblclick(function(){
+				$(".one").css({
+					'background-color' :'blue'
+				});//function for changing the color of the squares 1//
+			});
+			$("#square2").dblclick(function(){
+				$(".two").css({
+					'background-color' :'yellow'
+				});//function for changing the color of the squares 2//
+			});
+			$("#square3").dblclick(function(){
+				$(".three").css({
+					'background-color' :'red'
+				});//function for changing the color of the squares 3//
+			});
+			$("#square4").dblclick(function(){
+				$(".four").css({
+					'background-color' :'purple'
+				});//function for changing the color of the squares 4//
+			});
+		});
+	</script>
+	<style >
+	div { /*to create a box that will appear on the web starting from color, size, margin */
+	width: 100px;
+	height: 100px;
+	border-style: black;
+	border-width: 2px;
+	border-color: purple;
+	background-color: purple;
+	margin-left:15px;
+	float:left;		
+	}
+		.satu{
+			border-radius: 0px; /*make square*/
+		}
+		.dua{
+			border-radius: 0px; /*make square*/
+		}
+		.tiga{
+			border-radius: 0px; /*make square*/
+		}
+		.empat{
+			border-radius: 0px; /*make square*/
+		}
+	</style>
+</head>
+<body>
+	<p>kotak ini akan berubah warna apabila di klik</p>
+		<!-- call the square 1 that was created in style -->
+<div id= "kotak1" class="satu"></div> 
+		<!-- call the square 2 that was created in style -->
+<div id= "kotak2" class="dua"></div>
+		<!-- call the square 3 that was created in style -->
+<div id= "kotak3" class="tiga"></div>
+		<!-- call the square 4 that was created in style -->
+<div id= "kotak4" class="empat"></div>
+</body>
+</html>

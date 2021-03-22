@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Deklarasi JQuery -->
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// function button to hide photos1 //
+			$(".hide").click(function(){$("#foto1").hide("slow")}); 
+			// function button to show photos1 //
+			$(".show").click(function(){$("#foto1").show("slow")});
+			// function button to hide photos2 //
+			$(".hide").click(function(){$("#foto2").hide("slow")});
+			// function button to show photos2 //
+			$(".show").click(function(){$("#foto2").show("slow")});
+			// function button to hide2 photos3 //
+			$(".hide2").click(function(){$("#foto3").hide("slow")});
+			// function button to show2 photos3 //
+			$(".show2").click(function(){$("#foto3").show("slow")});
+			// function button to hide2 photos4 //
+			$(".hide2").click(function(){$("#foto4").hide("slow")});
+			// function button to appear2 photos4 //
+			$(".show2").click(function(){$("#foto4").show("slow")});
+		});
+	</script>
+	<title>Tugas 1 JQuery
+	</title>
+</head>
+<style>
+		
+	</style>
+<body>
+	 <!-- Hide button that hide on the web page -->
+<button class="hide">hide image </button>
+	 <!-- Hide button that show on the web page -->
+<button class="appear">Show image </button><br><br> 
+	 <!--show photos1 is LogoHimasifo -->
+<img id="foto1"src="LogoHimasifo.jpg" style="height: 230px; width:230px;" > 
+	 <!--show photos2 is Logoupn -->
+<img id="foto2"src="logoupn.png" style=""><br><br>
+	 <!-- button class hide2 on image-->
+<button class="Sembunyi2">Sembunyikan gambar</button>
+	 <!-- button class show2 on image-->
+<button class="Tampil2">Tampilkan gambar</button><br><br>
+	 <!-- set the size of photos3 java that show on web pages -->
+<img id="foto3" src="java.jpg" style="height: 230px; width:400px; "> 
+	 <!-- set the size of photos4 html that show on web pages -->
+<img id="foto4" src="html.png" style="height: 230px; width:230px; ">
+
+</body>
+</html>
